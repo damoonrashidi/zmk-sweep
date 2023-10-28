@@ -46,27 +46,19 @@
         compatible = "zmk,combos";
 
         // both right thumb keys
-
-        combo_accent {
-            timeout-ms = <300>;
-            key-positions = <32 33>;
-            bindings = <&mo 0>;
-        };
-
         // internal-left & external-right thumb keys
-
-        combo_sym2 {
-            timeout-ms = <200>;
-            key-positions = <31 33>;
-            bindings = <&mo 0>;
-        };
-
         // both left thumb keys
 
-        combo_settings {
+        esc {
             timeout-ms = <300>;
             key-positions = <30 31>;
-            bindings = <&mo 0>;
+            bindings = <&kp ESC>;
+        };
+
+        tog_def_layer {
+            bindings = <&tog 0>;
+            key-positions = <33 30>;
+            layers = <3 1 2>;
         };
     };
 
@@ -100,7 +92,7 @@
 &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &trans
 &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &trans
 &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &kp RS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans
-                        &kp N0  &to 0     &trans  &kp LS(N0)
+                        &kp N0  &tog 0    &trans  &kp LS(N0)
             >;
 
             label = "numbers";
