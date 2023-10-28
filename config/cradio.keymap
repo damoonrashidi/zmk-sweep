@@ -77,29 +77,44 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W           &kp F        &kp P             &kp B    &kp J       &kp L              &kp U        &kp Y            &kp SQT
-&mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G    &kp M       &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RGUI O
-&kp Z       &kp X           &kp C        &kp D             &kp V    &kp K       &kp H              &kp COMMA    &kp PERIOD       &kp SLASH
-                                         &lt 1 SPACE       &to 0    &kp RETURN  &kp BACKSPACE
+&kp Q       &kp W           &kp F        &kp P             &kp B     &kp J       &kp L              &kp U        &kp Y            &kp SQT
+&mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G     &kp M       &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RGUI O
+&kp Z       &kp X           &kp C        &kp D             &kp V     &kp K       &kp H              &kp COMMA    &kp PERIOD       &kp SLASH
+                                         &lt 1 SPACE       &tog 2    &kp RETURN  &kp BACKSPACE
             >;
         };
 
-        layer_1 {
+        arrows {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
                         &trans  &trans    &trans    &trans
             >;
+
+            label = "arrows";
         };
 
-        layer_2 {
+        numbers {
             bindings = <
 &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &trans
 &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &trans
 &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &kp RS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans
                         &kp N0  &to 0     &trans  &kp LS(N0)
             >;
+
+            label = "numbers";
+        };
+
+        media {
+            bindings = <
+&trans  &trans  &trans         &trans         &trans    &trans      &trans        &trans           &trans      &trans
+&trans  &trans  &kp C_BRI_DEC  &kp C_BRI_INC  &trans    &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT  &trans
+&trans  &trans  &trans         &trans         &trans    &trans      &trans        &trans           &trans      &trans
+                               &trans         &trans    &trans      &trans
+            >;
+
+            label = "media";
         };
 
         // Numbers and high frequency symbols
