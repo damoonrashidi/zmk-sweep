@@ -77,10 +77,28 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W           &kp F        &kp P             &kp B    &kp J      &kp L  &kp U      &kp Y    &kp SQT
-&mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G    &kp H      &kp J  &kp K      &kp L    &kp IT_OGRV
-&kp Z       &kp X           &kp C        &kp D             &kp V    &kp N      &kp M  &kp COMMA  &kp DOT  &kp IT_UGRV
-                                         &kp SPACE         &to 0    &kp SPACE  &sl 0
+&kp Q       &kp W           &kp F        &kp P             &kp B    &kp J       &kp L              &kp U        &kp Y            &kp SQT
+&mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G    &kp M       &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RGUI O
+&kp Z       &kp X           &kp C        &kp D             &kp V    &kp K       &kp H              &kp COMMA    &kp PERIOD       &kp SLASH
+                                         &kp SPACE         &to 0    &kp RETURN  &kp BACKSPACE
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
 
